@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: auto;
     background-color: rgba(52, 52, 52, 0.584);
     margin: -100px;
     padding-bottom: 40px;
