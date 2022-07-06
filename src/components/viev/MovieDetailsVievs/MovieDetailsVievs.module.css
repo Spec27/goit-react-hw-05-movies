@@ -1,0 +1,63 @@
+.Container{
+    display: flex;
+    width: auto;
+    height: 650px;
+    padding-left: 30px;
+    padding-top: 40px;
+    background-color: rgba(18, 17, 17, 0.856);
+}
+.Bcg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 650px;
+    background-color: black;
+}
+.Poster{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Img{
+    width: 400px;
+    height: auto;
+   
+  
+}
+.ConteinerInfo{
+    width: 600px;
+    margin-left: 40px;
+}
+.TitleH2{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.TitleH3{
+    color: aliceblue;
+}
+.Text{
+    color: #a4a2a2;
+}
+.Item{
+    font-family: arial;
+    font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: 4px;
+    font-weight: 700;
+    list-style: none;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    color: white;
+    font: Georgia, serif;
+    padding-bottom: 60px;
+}
+.ContainerCast{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    background-color: rgba(18, 17, 17, 0.856);
+}

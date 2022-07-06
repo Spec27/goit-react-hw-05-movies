@@ -19,7 +19,9 @@ const Navigation = () => {
             </NavLink>
         </nav>  
             <Outlet />
-            <footer></footer>
+            <footer>
+                
+            </footer>
         </>
         
     )

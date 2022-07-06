@@ -1,19 +1,28 @@
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import AppBar from "./AppBar";
-import HomeVievs from "./viev/HomeVievs";
-import MoviesVievs from "./viev/MoviesVievs";
-import NotFoundViev from "./viev/NotFoundViev";
+
+const HomeVievs = lazy(() => import("./viev/HomeVievs"));
+const MoviesVievs = lazy(() => import("./viev/MoviesVievs"));
+const NotFoundViev = lazy(() => import("./viev/NotFoundViev"));
+const MovieDetailsVievs = lazy(() => import("./viev/MovieDetailsVievs"));
+const Cast =lazy(()=>import("./viev/Cast"))
+
 
 export const App = () => {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<AppBar />}>
-          <Route index element={<HomeVievs />} />
-          <Route path="movies" element={<MoviesVievs />} />
-          <Route path="*" element={ <NotFoundViev/>} />
-        </Route>
-      </Routes>
+      <Suspense fallback={<h1>Procesing...</h1>}>
+      <AppBar />
+        <Routes>
+            <Route path="/"element={<HomeVievs />} />
+            <Route path="movies" element={<MoviesVievs />} />
+            <Route path="movies/:movieId" element={<MovieDetailsVievs />}>
+            <Route path="cast" element={<Cast/>} />
+            </Route>
+            <Route path="*" element={ <NotFoundViev/>} />
+       </Routes>
+      </Suspense>
     </div>
   );
 };
