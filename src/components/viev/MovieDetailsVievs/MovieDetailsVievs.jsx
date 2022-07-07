@@ -41,11 +41,17 @@ export default function MovieDetailsVievs() {
                     </>} 
             </div> 
             <div className={s.ContainerCast}>
-                <ul>
+                <ul className={s.List}>
                      <li className={s.Item}>
                          <NavLink className={s.TitleH2}
                             to={`/movies/${movieId}/cast`}
                             state={{ from: location?.state?.from }}>Cast
+                         </NavLink>
+                    </li>
+                    <li className={s.Item}>
+                         <NavLink className={s.TitleH2}
+                            to={`/movies/${movieId}/reviews`}
+                            state={{ from: location?.state?.from }}>Reviews
                          </NavLink>
                     </li>
                 </ul>

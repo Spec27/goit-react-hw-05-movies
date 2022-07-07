@@ -6,6 +6,9 @@
     padding-top: 40px;
     background-color: rgba(18, 17, 17, 0.856);
 }
+.List{
+    display: flex;
+}
 .Bcg{
     display: flex;
     justify-content: center;
@@ -37,9 +40,11 @@
 
 .TitleH3{
     color: aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(30, 30, 33), 0 0 0.2em rgb(150, 150, 152);
 }
 .Text{
     color: #a4a2a2;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(30, 30, 33), 0 0 0.2em rgb(150, 150, 152);
 }
 .Item{
     font-family: arial;
@@ -52,6 +57,7 @@
     color: white;
     font: Georgia, serif;
     padding-bottom: 60px;
+    margin-right: 60px;
 }
 .ContainerCast{
     display: flex;

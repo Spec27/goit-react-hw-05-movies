@@ -1,0 +1,26 @@
+.Container{
+    background-color: rgb(107, 102, 102);
+}
+.List{
+    margin: 0;
+}
+.Elem{
+    list-style: none;
+}
+.Title{
+    font-family: arial;
+    font-size: 24px;
+    line-height: 1.6;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin: 0;
+    color:#ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(30, 30, 33), 0 0 0.2em rgb(150, 150, 152);
+}
+.Text{
+    color:#e9e0e0;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(30, 30, 33), 0 0 0.2em rgb(150, 150, 152);
+    margin: 0;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}

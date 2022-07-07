@@ -42,5 +42,6 @@
 .Text{
     margin: 0;
     text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(30, 30, 33), 0 0 0.2em rgb(150, 150, 152);
 }
 
