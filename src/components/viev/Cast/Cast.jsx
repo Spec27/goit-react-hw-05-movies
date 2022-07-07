@@ -13,9 +13,9 @@ import s from "./Cast.module.css"
 
     return (
     <>
-       <div>
+       <div className={s.Container}>
            {actors && (
-           <ul className={s.Container}>
+           <ul className={s.CardContainer}>
              {actors
                .filter((actor, index) => index < 10 && actor.profile_path)
                .map(({ id, name, profile_path, character }) => (

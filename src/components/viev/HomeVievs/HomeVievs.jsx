@@ -16,7 +16,8 @@ const HomeVievs = () => {
     return (
         <>
         <div className={s.Container} >
-                <h1 className={s.Title} >Популярне сьогодні</h1>
+                <h1 className={s.Title} >
+Popular Today</h1>
                 {films && (
                     <ul className={s.List}>
                         {films.map(({ id, title ,poster_path}) => <li className={s.Card}  key={id}>

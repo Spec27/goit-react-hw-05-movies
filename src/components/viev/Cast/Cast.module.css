@@ -1,13 +1,15 @@
-.Container{
+
+.CardContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: auto;
-    background-color: rgba(52, 52, 52, 0.584);
-    margin: -100px;
+    width:auto;
+    background-color: rgba(104, 104, 104, 0.855);
     padding-bottom: 40px;
-}
+    margin: 0;
+   }
+
 .Card{
     display: flex;
     flex-direction: column;
@@ -18,7 +20,9 @@
     height: 500px;
     color: #ffffff;
     background-color: black;
-    margin-right: 30px;
+    margin-top: -80px;
+    margin-right: 20px;
+    margin-bottom:120px;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 6px 6px 8px 2px rgba(81, 81, 83, 0.616);
@@ -39,9 +43,4 @@
     margin: 0;
     text-align: center;
 }
-.ColorContainer{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-right: -30px;
-}
+
