@@ -8,6 +8,7 @@ import {
   useNavigate,
 } from 'react-router-dom';
 import * as moviesApi from '../../../service/Api-Service';
+import Loader from 'components/Loader';
 
 export default function MovieDetailsVievs() {
   const { movieId } = useParams();
@@ -87,7 +88,7 @@ export default function MovieDetailsVievs() {
           </li>
         </ul>
       </div>
-      <Suspense fallback={<div>Download...</div>}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
     </>
