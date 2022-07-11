@@ -1,10 +1,10 @@
-import Navigation from "components/Navigation";
+import Navigation from 'components/Navigation';
 
 const AppBar = () => {
-    return (
-        <header>
-            <Navigation/>
-        </header>
-    )
-}
+  return (
+    <header>
+      <Navigation />
+    </header>
+  );
+};
 export default AppBar;

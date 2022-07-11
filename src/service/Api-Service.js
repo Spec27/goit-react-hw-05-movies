@@ -23,6 +23,8 @@ export async function fethMovieReviews(movieId) {
 }
 
 export async function searchMovies(searchQuery) {
-  const { data } = await axios(`search/movie?api_key=${API_KEY}&query=${searchQuery}`,);
+  const { data } = await axios(
+    `search/movie?api_key=${API_KEY}&query=${searchQuery}`,
+  );
   return data.results;
 }
