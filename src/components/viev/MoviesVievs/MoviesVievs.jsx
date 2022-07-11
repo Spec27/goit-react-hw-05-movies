@@ -54,7 +54,7 @@ const MoviesVievs = () => {
         <ul className={s.List} >
           {searchedFilms.map(({ id, title, poster_path }) => (
             <li className={s.Card} key={id} >
-              <Link className={s.Cardlink} to={`${id}`} state={{ from: location }} >
+              <Link className={s.Cardlink} to={{}`${id}`} state={{ from: location }} >
                 <div >
                   <img 
                     className={s.Img}

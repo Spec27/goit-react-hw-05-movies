@@ -1,6 +1,6 @@
 import s from "./MovieDetailsVievs.module.css"
 import { useState, useEffect , Suspense  } from "react";
-import { useParams,NavLink,Outlet,useLocation,} from "react-router-dom";
+import { useParams,NavLink,Outlet,useLocation,useNavigate} from "react-router-dom";
 import * as moviesApi from '../../../service/Api-Service';
 
 
@@ -8,14 +8,24 @@ export default function MovieDetailsVievs() {
     const  {movieId}= useParams();
     const [film, setFilm] = useState(null);
     const location = useLocation();
+    const navigate = useNavigate();
    
 
     useEffect(() => {
         moviesApi.fetchMovieDetails(movieId).then(setFilm).catch(console.log());
     }, [movieId]);
+
+    const onGoBack = () => {
+        navigate(location?.state?.from ?? '/');
+      };
     
     return (
         <>
+            <div className={s.Bcground}>
+            <button type="button" onClick={onGoBack} className={s.btn}>
+        Go back
+      </button>
+            </div>
             <div className={s.Container}>
                 {film &&
                     <>
