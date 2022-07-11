@@ -23,6 +23,8 @@ export default function MovieDetailsVievs() {
     navigate(location?.state?.from ?? '/');
   };
 
+  const setActive = ({ isActive }) => (isActive ? s.ActiveLink : s.Link);
+
   return (
     <>
       <div className={s.Bcground}>
@@ -67,7 +69,7 @@ export default function MovieDetailsVievs() {
         <ul className={s.List}>
           <li className={s.Item}>
             <NavLink
-              className={s.TitleH2}
+              className={setActive}
               to={`/movies/${movieId}/cast`}
               state={{ from: location?.state?.from }}
             >
@@ -76,7 +78,7 @@ export default function MovieDetailsVievs() {
           </li>
           <li className={s.Item}>
             <NavLink
-              className={s.TitleH2}
+              className={setActive}
               to={`/movies/${movieId}/reviews`}
               state={{ from: location?.state?.from }}
             >
